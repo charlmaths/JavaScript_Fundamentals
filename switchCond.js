@@ -15,5 +15,5 @@ function browserSelect() {
   }
 }
 
-// Call the function output
+// Call the function output -- This is how we call functions in JS
 browserSelect();
