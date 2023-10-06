@@ -1,6 +1,7 @@
 // New JavaScript Activity
 /*
 First is we declare a variable using 'const' and we called these variables 'select' and 'paragraph'
+it's quiet similar on how we select elements in CSS
 */
 const select = document.querySelector("select");
 const paragraph = document.querySelector("p");
@@ -36,3 +37,4 @@ function setWeather(){
         paragraph.textContent = ""; // This will be empty because before we select anything, its empty
     }
 }
+
