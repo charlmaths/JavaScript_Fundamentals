@@ -1,7 +1,7 @@
 /*
 We are changing switch statements to if...else then vice versa
 */
-let browser = "Edge";
+let browser = "Chrome";
 
 function browserSelect() {
   choice = browser;
@@ -17,3 +17,27 @@ function browserSelect() {
 
 // Call the function output -- This is how we call functions in JS
 browserSelect();
+
+
+// Below is a function equivalent but using switch statements
+
+function browserSelectSwitch() {
+  choice = browser
+
+  switch(choice) {
+  case "Edge":
+    console.log("you've got edge broski")
+    break
+
+  case "Firefox":
+    console.log("firefox bro")
+    break
+
+  case "Chrome":
+    console.log("Chrome my g")
+    break
+  }
+
+}
+
+browserSelectSwitch();
