@@ -15,7 +15,7 @@ document and this will allow us to to access their information/values
 select.addEventListener("change", setWeather);
 /*
 This is called an event listener, basically this will listen to the <select> element in the HTML document
-not in this JS script - and essentially if the value in <select> is changed, we can trigger the function below
+within this JS script - and essentially if the value in <select> is changed, we can trigger the function below
 the "change" is the event - we need this event listener to trigger our js function
 */
 
