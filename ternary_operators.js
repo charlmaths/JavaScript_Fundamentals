@@ -8,8 +8,8 @@ function getFee(isAMember) {
     return isAMember ? "£2.00" : "£10.00"
 }
 
-console.log(getFee(true)); // returns £2.00
-console.log(getFee(false)); // returns £10.00
+// console.log(getFee(true)); // returns £2.00
+// console.log(getFee(false)); // returns £10.00
 
 
 /*
@@ -24,8 +24,8 @@ function getFee_v2(isAMember) {
     }
 }
 
-console.log(getFee_v2(true));
-console.log(getFee_v2(false));
+// console.log(getFee_v2(true));
+// console.log(getFee_v2(false));
 
 
 /*
@@ -42,5 +42,45 @@ function getFee_v3(isAMember) {
   }
 }
 
-console.log(getFee_v3(true));
-console.log(getFee_v3(false));
+// console.log(getFee_v3(true));
+// console.log(getFee_v3(false));
+
+
+/*
+function to determine if x < 5
+*/
+
+function getValue(x) {
+    return x < 5 ? "x is less than 5" : "x is above 5"
+}
+
+//console.log(getValue(6));
+//console.log(getValue(4));
+
+
+/*
+More example that uses ternary operators
+*/
+
+/*
+Here we defined a variable called age and set a value for it i.e. 25
+then we made another variable called 'drink' which has a conditional operator that says
+thee drink served if "age is > 21" then give the value after '?' "Here's some beer" else
+age is not over 21 therefore give the value after ':' "Juice bro"
+*/
+const age = 25
+const drink = age > 21 ? "Here's some beer" : "Juice bro"
+console.log(drink);
+
+
+/*
+We can use a null/empty value
+*/
+
+const greeting = (person) => {
+    const name = person ? person.name : "stranger";
+    return `Howdy, ${name}`;
+};
+
+console.log(greeting({name : "alice"}));
+console.log(greeting(null));
