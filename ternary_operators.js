@@ -77,6 +77,8 @@ console.log(drink);
 We can use a null/empty value
 */
 
+// Now this is an example of an arrow function - this is someting that we need to learn
+// it is like a normal function but it's kinda better? idk
 const greeting = (person) => {
     const name = person ? person.name : "stranger";
     return `Howdy, ${name}`;
