@@ -54,7 +54,31 @@ we tend to save them for "later use" where as anon functions that we want the va
 // })
 
 
-setTimeout(function () {
-    console.log("This message will show after 2 seconds");
-}, 2000)
+// setTimeout(function () {
+//     console.log("This message will show after 2 seconds");
+// }, 2000)
 
+// const age = 19
+// const drinkToServe = () => age > 18 ? "Beer" : "Juice";
+// console.log(drinkToServe())
+
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+// }
+
+// ask(
+//   "Do you agree?",
+//   () => console.log("you agreed."),
+//   () => console.log("you cancelled")
+// );
+
+
+
+const ask = (question, yes, no) => confirm(question) ? yes() : no();
+ask(
+    "do you agree?",
+    () => console.log("you agreed!"),
+    () => console.log("so you dont?")
+)
