@@ -75,7 +75,7 @@ we tend to save them for "later use" where as anon functions that we want the va
 // );
 
 
-
+// This won't work because confirm does not work in NODE.JS but we are right still!
 const ask = (question, yes, no) => confirm(question) ? yes() : no();
 ask(
     "do you agree?",
